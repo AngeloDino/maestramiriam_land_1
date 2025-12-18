@@ -1,0 +1,99 @@
+import { FaWhatsapp } from "react-icons/fa";
+import { PHONE_NUMBER } from "../App.jsx";
+
+export default function Hero() {
+  return (
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center px-6 overflow-hidden"
+    >
+      {/* LOGO FONDO */}
+      <img
+        src="/logomm.svg"
+        alt=""
+        className="
+          absolute pointer-events-none opacity-20
+          w-[120vw] max-w-none
+          md:w-[90vw] md:max-w-170
+        "
+        style={{
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      />
+
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-black/60" />
+
+      {/* CONTENIDO */}
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
+        <div className="flex flex-col items-center text-center md:items-start md:text-left gap-10">
+
+          {/* TEXTO */}
+          <div className="max-w-xl">
+            <h1
+              className="
+                text-3xl sm:text-4xl md:text-6xl
+                font-bold leading-tight
+                tracking-wide md:tracking-wider
+                bg-linear-to-r from-red-700 via-red-500 to-red-700
+                bg-clip-text text-transparent
+              "
+            >
+              Bienvenido al
+              <br />
+              Mundo Místico
+            </h1>
+
+            <h2 className="mt-6 text-base sm:text-lg md:text-2xl text-red-200/85 leading-relaxed">
+              Más de 20 años guiando caminos espirituales hacia el amor, la
+              prosperidad y la protección.
+            </h2>
+          </div>
+
+          {/* BOTONES */}
+          <div className="w-full max-w-sm flex flex-col gap-4">
+            <a
+              href={`https://wa.me/${PHONE_NUMBER}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                flex items-center justify-center gap-3
+                px-6 py-4
+                text-xs sm:text-sm font-bold uppercase
+                tracking-[0.15em] sm:tracking-[0.25em]
+                text-black
+                bg-green-600 hover:bg-green-500
+                transition-all duration-300
+                hover:scale-105
+                shadow-[0_0_25px_rgba(34,197,94,0.45)]
+              "
+            >
+              <FaWhatsapp className="text-lg" />
+              Consulta Directa
+            </a>
+
+            <a
+              href="#servicios"
+              className="
+                text-center
+                bg-linear-to-r from-red-900 to-red-700
+                px-6 py-4
+                text-xs sm:text-sm font-bold uppercase
+                tracking-[0.2em]
+                border border-red-700
+                shadow-xl
+                transition hover:scale-105
+              "
+            >
+              Explorar Servicios
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
+
