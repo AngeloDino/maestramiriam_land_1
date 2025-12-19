@@ -12,15 +12,14 @@ export default function Hero() {
         src="/logomm.svg"
         alt=""
         className="
-          absolute pointer-events-none opacity-20
-          w-[120vw] max-w-none
-          md:w-[90vw] md:max-w-170
-        "
-        style={{
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-        }}
+        absolute pointer-events-none
+        opacity-100
+        w-[120vw] max-w-none
+        md:w-[90vw] md:max-w-170
+
+        top-1/2
+        left-1/2 md:left-[75%]
+        -translate-x-1/2 -translate-y-1/2"
       />
 
       {/* OVERLAY */}
@@ -29,7 +28,6 @@ export default function Hero() {
       {/* CONTENIDO */}
       <div className="relative z-10 max-w-6xl mx-auto w-full">
         <div className="flex flex-col items-center text-center md:items-start md:text-left gap-10">
-
           {/* TEXTO */}
           <div className="max-w-xl">
             <h1
@@ -71,7 +69,7 @@ export default function Hero() {
               "
             >
               <FaWhatsapp className="text-lg" />
-              Consulta Directa
+              Consulta Totalmente Gratuita
             </a>
 
             <a
@@ -90,10 +88,8 @@ export default function Hero() {
               Explorar Servicios
             </a>
           </div>
-
         </div>
       </div>
     </section>
   );
 }
-

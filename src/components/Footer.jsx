@@ -44,7 +44,7 @@ export default function Footer() {
                 "
               >
                 <FaWhatsapp className="w-6 h-6" />
-                Consulta por WhatsApp
+                Consulta Totalmente Gratis
               </button>
             </div>
             {/* TELÉFONO */}

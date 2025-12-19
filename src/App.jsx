@@ -5,6 +5,8 @@ import Footer from "./components/Footer.jsx";
 import WhatsAppFloat from "./components/WhatsappFloat.jsx";
 import ScrollTop from "./components/ScrollTop.jsx";
 import InstagramFloat from "./components/InstagramFloat.jsx";
+import FacebookFloat from "./components/FacebookFloat.jsx";
+import TestimonialSection from "./components/TestimonialSection.jsx";
 
 function App() {
   return (
@@ -12,8 +14,10 @@ function App() {
       <Hero />
       <Header />
       <Services />
+      <TestimonialSection />
       <Footer />
       <ScrollTop/>
+      <FacebookFloat />
       <InstagramFloat />
       <WhatsAppFloat />
     </div>

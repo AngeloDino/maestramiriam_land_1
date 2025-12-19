@@ -3,7 +3,7 @@ import ServiceReveal from "./ServiceReveal";
 
 export default function Services() {
   return (
-    <section id="servicios" className="py-32 px-6">
+    <section id="servicios" className="pt-12 md:pt-20 pb-16 md:pb-24 px-6">
       <div className="max-w-6xl mx-auto">
         {services.map((service, index) => (
           <ServiceReveal
