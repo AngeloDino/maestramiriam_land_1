@@ -44,9 +44,13 @@ export default function Hero() {
               Mundo Místico
             </h1>
 
-            <h2 className="mt-6 text-base sm:text-lg md:text-2xl text-red-200/85 leading-relaxed">
-              Más de 20 años guiando caminos espirituales hacia el amor, la
-              prosperidad y la protección.
+            <h2 className="mt-6 text-base sm:text-lg md:text-xl text-red-200/85 leading-relaxed">
+              🔮 La Maestra Miriam te ayudará a salir del estancamiento, lograr
+              ese amor imposible y conseguir la riqueza que tanto mereces y
+              deseas. ✨ Con más de 10 años de experiencia, guía caminos
+              espirituales hacia el amor ❤️, la prosperidad 💰 y la protección
+              🧿. 📿 Consultas totalmente GRATIS; solo pagas los materiales. ✍️
+              Escríbenos hoy y da el primer paso hacia el cambio.
             </h2>
           </div>
 
