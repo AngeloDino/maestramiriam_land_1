@@ -13,7 +13,7 @@ export default function Hero() {
         alt=""
         className="
         absolute pointer-events-none
-        opacity-100
+        opacity-25
         w-[120vw] max-w-none
         md:w-[90vw] md:max-w-170
 
@@ -29,22 +29,37 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto w-full">
         <div className="flex flex-col items-center text-center md:items-start md:text-left gap-10">
           {/* TEXTO */}
-          <div className="max-w-xl">
+          <div className="max-w-xl flex flex-col items-center md:items-start">
+            {/* LOGO SUPERIOR */}
+            <img
+              src="/logomm.svg"
+              alt="Maestra Miriam"
+              className="
+              w-40 sm:w-100 md:w-100
+              mb-8
+              opacity-95
+              drop-shadow-[0_0_25px_rgba(220,38,38,0.55)]
+              animate-[fadeBlurIn_1s_ease-out_forwards]
+              "
+            />
+
+            {/* TÍTULO */}
             <h1
               className="
-                text-3xl sm:text-4xl md:text-6xl
-                font-bold leading-tight
-                tracking-wide md:tracking-wider
-                bg-linear-to-r from-red-700 via-red-500 to-red-700
-                bg-clip-text text-transparent
-              "
+      text-3xl sm:text-4xl md:text-6xl
+      font-bold leading-tight
+      tracking-wide md:tracking-wider
+      bg-linear-to-r from-red-700 via-red-500 to-red-700
+      bg-clip-text text-transparent
+    "
             >
               Bienvenido al
               <br />
               Mundo Místico
             </h1>
 
-            <h2 className="mt-6 text-base sm:text-lg md:text-xl text-red-200/85 leading-relaxed">
+            {/* DESCRIPCIÓN */}
+            <h2 className="mt-5 text-base sm:text-lg md:text-xl text-red-200/85 leading-relaxed">
               🔮 La Maestra Miriam te ayudará a salir del estancamiento, lograr
               ese amor imposible y conseguir la riqueza que tanto mereces y
               deseas. ✨ Con más de 10 años de experiencia, guía caminos

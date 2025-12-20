@@ -49,4 +49,16 @@ body {
   animation: mysticGradient 5s ease-in-out infinite;
 }
 
+@keyframes fadeBlurIn {
+  0% {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(-10px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+  }
+}
 
